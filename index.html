@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of a Computer Science undergraduate showcasing skills, projects, and professional journey.">
+    <meta name="keywords" content="portfolio, computer science, developer, student, programming">
+    <meta name="author" content="CS Student">
+    <title>Portfolio | Computer Science Student</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Dev</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#collaboration" class="nav-link">Teamwork</a></li>
+                <li><a href="#goals" class="nav-link">Goals</a></li>
+                <li><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <span class="badge-dot"></span>
+                <span>Available for Opportunities</span>
+            </div>
+            <h1 class="hero-title animate-on-scroll">
+                <span class="title-line">Building the Future</span>
+                <span class="title-line title-gradient">One Line of Code</span>
+                <span class="title-line">at a Time</span>
+            </h1>
+            <p class="hero-subtitle animate-on-scroll">
+                Computer Science Undergraduate passionate about crafting elegant solutions 
+                through clean, structured code and innovative problem-solving.
+            </p>
+            <div class="hero-cta animate-on-scroll">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get in Touch</span>
+                </a>
+            </div>
+            <div class="hero-stats animate-on-scroll">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="2026">2026</span>
+                    <span class="stat-label">Expected Graduation</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">B.Tech</span>
+                    <span class="stat-label">Computer Science</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Learning Mindset</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll to Explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Introduction</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image animate-on-scroll">
+                    <div class="image-frame">
+                        <div class="image-placeholder">
+                            <div class="placeholder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="8" r="4"/>
+                                    <path d="M4 20c0-4 4-6 8-6s8 2 8 6"/>
+                                </svg>
+                            </div>
+                            <span class="placeholder-text">Your Photo</span>
+                        </div>
+                        <div class="image-decoration"></div>
+                    </div>
+                    <div class="about-badge">
+                        <span class="badge-icon">🎓</span>
+                        <span>Class of 2026</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text animate-on-scroll">
+                        <p class="about-intro">
+                            I'm a dedicated <strong>Computer Science undergraduate</strong> at 
+                            <strong>Kommuri Pratap Reddy Institute of Technology</strong>, on track to 
+                            graduate in <strong>May 2026</strong>. My academic journey has equipped me 
+                            with a robust foundation in programming and software development.
+                        </p>
+                        <p>
+                            I thrive on solving complex problems through logical thinking and take pride 
+                            in writing clean, structured, and readable code. My experience extends beyond 
+                            individual work—I've actively contributed to academic software projects and 
+                            collaborated effectively within team environments.
+                        </p>
+                        <p>
+                            What drives me is the opportunity to transform technical knowledge into 
+                            real-world solutions. I'm committed to continuous learning and innovation, 
+                            always seeking ways to grow in technology-driven environments.
+                        </p>
+                    </div>
+                    <div class="about-highlights animate-on-scroll">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <div class="highlight-text">
+                                <h4>Strong Foundations</h4>
+                                <p>Solid programming & software development skills</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9.663 17h4.674M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                </svg>
+                            </div>
+                            <div class="highlight-text">
+                                <h4>Problem Solver</h4>
+                                <p>Logical thinking & analytical approach</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 7a4 4 0 100 8 4 4 0 000-8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                                </svg>
+                            </div>
+                            <div class="highlight-text">
+                                <h4>Team Player</h4>
+                                <p>Collaboration & communication excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-intro animate-on-scroll">
+                <p>
+                    A curated collection of technologies and competencies I've developed through 
+                    rigorous coursework, hands-on projects, and continuous self-improvement.
+                </p>
+            </div>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16,18 22,12 16,6"/>
+                                <polyline points="8,6 2,12 8,18"/>
+                            </svg>
+                        </div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="2" y1="12" x2="22" y2="12"/>
+                                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                            </svg>
+                        </div>
+                        <h3>Web Technologies</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+                            </svg>
+                        </div>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Core Competencies -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                        </div>
+                        <h3>Core Competencies</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Algorithms</span>
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Clean Code</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                            </svg>
+                        </div>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Time Management</span>
+                        <span class="skill-tag">Adaptability</span>
+                    </div>
+                </div>
+
+                <!-- Currently Learning -->
+                <div class="skill-category skill-category-learning animate-on-scroll">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>
+                            </svg>
+                        </div>
+                        <h3>Currently Learning</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag-learning">Machine Learning</span>
+                        <span class="skill-tag skill-tag-learning">Cloud Computing</span>
+                        <span class="skill-tag skill-tag-learning">System Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-intro animate-on-scroll">
+                <p>
+                    A showcase of academic projects and software solutions demonstrating practical 
+                    application of programming concepts and problem-solving abilities.
+                </p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <article class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="overlay-text">View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Data Analysis</span>
+                        </div>
+                        <h3 class="project-title">Data Analysis Dashboard</h3>
+                        <p class="project-description">
+                            An interactive dashboard for visualizing and analyzing datasets, 
+                            featuring dynamic charts and statistical computations.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 2 -->
+                <article class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="overlay-text">View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">OOP</span>
+                        </div>
+                        <h3 class="project-title">Inventory Management System</h3>
+                        <p class="project-description">
+                            A comprehensive inventory tracking application with CRUD operations, 
+                            search functionality, and data persistence.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 3 -->
+                <article class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                                <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                                <line x1="12" y1="22.08" x2="12" y2="12"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="overlay-text">View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">C++</span>
+                            <span class="project-tag">Algorithms</span>
+                        </div>
+                        <h3 class="project-title">Algorithm Visualizer</h3>
+                        <p class="project-description">
+                            An educational tool that visualizes sorting and searching algorithms 
+                            with step-by-step animations and complexity analysis.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 4 -->
+                <article class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="overlay-text">View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">
+                            A responsive web application for managing tasks with features like 
+                            priorities, deadlines, and local storage persistence.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="projects-cta animate-on-scroll">
+                <a href="#" class="btn btn-outline">
+                    <span>View All Projects</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration Section -->
+    <section class="section collaboration" id="collaboration">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Working Together</span>
+                <h2 class="section-title">Collaboration & Teamwork</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="collab-content">
+                <div class="collab-text animate-on-scroll">
+                    <p class="collab-intro">
+                        I believe that great software is built through effective collaboration. 
+                        My experience in academic projects has taught me the value of clear 
+                        communication, shared responsibility, and collective problem-solving.
+                    </p>
+                </div>
+                <div class="collab-grid">
+                    <div class="collab-card animate-on-scroll">
+                        <div class="collab-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Team Projects</h3>
+                        <p>
+                            Contributed to multiple academic software projects, working alongside 
+                            peers to deliver functional solutions while meeting deadlines.
+                        </p>
+                    </div>
+                    <div class="collab-card animate-on-scroll">
+                        <div class="collab-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                            </svg>
+                        </div>
+                        <h3>Clear Communication</h3>
+                        <p>
+                            Strong verbal and written communication skills enable me to articulate 
+                            ideas clearly and ensure alignment within team environments.
+                        </p>
+                    </div>
+                    <div class="collab-card animate-on-scroll">
+                        <div class="collab-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                        </div>
+                        <h3>Time Management</h3>
+                        <p>
+                            Excellent organizational skills allow me to balance multiple tasks, 
+                            prioritize effectively, and deliver quality work on schedule.
+                        </p>
+                    </div>
+                    <div class="collab-card animate-on-scroll">
+                        <div class="collab-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3zM7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/>
+                            </svg>
+                        </div>
+                        <h3>Positive Attitude</h3>
+                        <p>
+                            I approach challenges with optimism and resilience, contributing to 
+                            a supportive team atmosphere that drives collective success.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section class="section goals" id="goals">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Vision</span>
+                <h2 class="section-title">Career Goals</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="goals-content">
+                <div class="goals-statement animate-on-scroll">
+                    <div class="quote-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+                    <blockquote>
+                        My aspiration is to evolve into a skilled software engineer who creates 
+                        impactful solutions while continuously pushing the boundaries of innovation.
+                    </blockquote>
+                </div>
+                <div class="goals-timeline">
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-marker">
+                            <span class="marker-number">01</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Immediate Focus</h3>
+                            <p>
+                                Complete my B.Tech with strong academic performance while building 
+                                a solid portfolio of projects that demonstrate practical skills.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-marker">
+                            <span class="marker-number">02</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Short-Term Goals</h3>
+                            <p>
+                                Secure an entry-level position where I can apply my technical 
+                                foundation, learn from experienced professionals, and contribute 
+                                meaningfully to real-world projects.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-marker">
+                            <span class="marker-number">03</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Long-Term Vision</h3>
+                            <p>
+                                Grow into a technical leader who mentors others, drives innovation, 
+                                and develops solutions that make a positive impact on users and 
+                                communities worldwide.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="goals-values animate-on-scroll">
+                    <h3>Core Values</h3>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <span class="value-icon">🎯</span>
+                            <span class="value-text">Continuous Learning</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">💡</span>
+                            <span class="value-text">Innovation</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🤝</span>
+                            <span class="value-text">Collaboration</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">✨</span>
+                            <span class="value-text">Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-text animate-on-scroll">
+                    <p>
+                        I'm always excited to discuss new opportunities, collaborate on projects, 
+                        or simply connect with fellow tech enthusiasts. Feel free to reach out!
+                    </p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info animate-on-scroll">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:your.email@example.com">your.email@example.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <span>Telangana, India</span>
+                            </div>
+                        </div>
+                        <div class="contact-socials">
+                            <h4>Connect on Social</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="GitHub">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Twitter">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form animate-on-scroll" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Tell me about your project or opportunity..."></textarea>
+                            <span class="form-line"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22,2 15,22 11,13 2,9"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">Dev</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Designed & Built with passion
+                </p>
+                <p class="footer-copyright">
+                    © 2026 All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
