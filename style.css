@@ -263,12 +263,8 @@ button {
 }
 
 .nav-logo {
-    font-family: var(--font-mono);
-    font-size: var(--text-xl);
-    font-weight: 600;
     display: flex;
     align-items: center;
-    gap: 2px;
     transition: transform var(--transition-base);
 }
 
@@ -276,12 +272,14 @@ button {
     transform: scale(1.05);
 }
 
-.logo-bracket {
-    color: var(--color-accent-primary);
-}
-
-.logo-text {
-    color: var(--color-text-primary);
+.logo-name {
+    font-family: var(--font-primary);
+    font-size: var(--text-xl);
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .nav-menu {
