@@ -21,15 +21,24 @@ document.addEventListener('DOMContentLoaded', () => {
 /**
  * ============================================
  * STARS BACKGROUND EFFECT
- * Creates twinkling stars in the hero section
+ * Creates twinkling stars in hero and all sections
  * ============================================
  */
 function initStars() {
-    const starsContainer = document.getElementById('stars');
-    if (!starsContainer) return;
+    // Add stars to hero section
+    const heroStars = document.getElementById('stars');
+    if (heroStars) {
+        createStars(heroStars, 100);
+    }
     
-    const numberOfStars = 100;
-    
+    // Add stars to all section backgrounds
+    const sectionStars = document.querySelectorAll('.section-stars');
+    sectionStars.forEach(container => {
+        createStars(container, 60);
+    });
+}
+
+function createStars(container, numberOfStars) {
     for (let i = 0; i < numberOfStars; i++) {
         const star = document.createElement('div');
         star.className = 'star';
@@ -48,7 +57,7 @@ function initStars() {
         star.style.background = colors[Math.floor(Math.random() * colors.length)];
         star.style.boxShadow = `0 0 ${size * 2}px ${star.style.background}`;
         
-        starsContainer.appendChild(star);
+        container.appendChild(star);
     }
 }
 

@@ -907,6 +907,143 @@ button {
 .section {
     padding: var(--space-5xl) 0;
     position: relative;
+    overflow: hidden;
+}
+
+/* Section Background - Same as Hero */
+.section-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.section-bg .aurora-waves,
+.section-bg .hero-grid,
+.section-bg .hero-glow,
+.section-bg .floating-shapes,
+.section-bg .shape {
+    position: absolute;
+}
+
+.section-bg .hero-grid {
+    inset: 0;
+    background-image: 
+        linear-gradient(rgba(100, 255, 218, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(100, 255, 218, 0.08) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+    animation: grid-move 25s linear infinite;
+}
+
+.section-bg .hero-glow {
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.25;
+    animation: glow-pulse 8s ease-in-out infinite alternate;
+}
+
+.section-bg .hero-glow-1 {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(135deg, #64ffda, #00d4ff);
+    top: -150px;
+    right: -150px;
+}
+
+.section-bg .hero-glow-2 {
+    width: 450px;
+    height: 450px;
+    background: linear-gradient(135deg, #7928ca, #ff0080);
+    bottom: -150px;
+    left: -150px;
+    animation-delay: -4s;
+}
+
+.section-bg .hero-glow-3 {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(135deg, #00d4ff, #bd34fe);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-delay: -2s;
+}
+
+.section-bg .floating-shapes {
+    inset: 0;
+}
+
+.section-bg .shape {
+    border-radius: 50%;
+    opacity: 0.08;
+    animation: float 20s ease-in-out infinite;
+}
+
+.section-bg .shape-1 {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #64ffda, #00d4ff);
+    top: 15%;
+    left: 8%;
+}
+
+.section-bg .shape-2 {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #7928ca, #ff0080);
+    top: 70%;
+    right: 10%;
+    animation-delay: -5s;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.section-bg .shape-3 {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #00d4ff, #bd34fe);
+    bottom: 20%;
+    left: 15%;
+    animation-delay: -10s;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+.section-bg .shape-4 {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #64ffda, #7928ca);
+    top: 25%;
+    right: 20%;
+    animation-delay: -15s;
+}
+
+.section-bg .aurora-waves {
+    inset: 0;
+    background: 
+        linear-gradient(180deg, transparent 0%, rgba(100, 255, 218, 0.02) 50%, transparent 100%),
+        linear-gradient(90deg, transparent 0%, rgba(121, 40, 202, 0.03) 30%, rgba(255, 0, 128, 0.02) 70%, transparent 100%);
+    animation: aurora-wave 10s ease-in-out infinite;
+}
+
+/* Section Stars */
+.section-stars {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.section-stars .star {
+    position: absolute;
+    border-radius: 50%;
+    animation: twinkle 3s ease-in-out infinite;
+}
+
+/* Ensure container is above background */
+.section > .container {
+    position: relative;
+    z-index: 1;
 }
 
 .section-header {
